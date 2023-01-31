@@ -37,11 +37,7 @@
     <% @book.book_review.each do |book_review| %>
     <li><%= book_review.review %>
       (<i><%= book_review.user_id %></i>)
-      <%
-=begin%>
- (<i><%= book_review.user.name if book_review.user%></i>) 
-<%
-=end%>
+      (<i><%= book_review.user.name if book_review.user%></i>) 
       </li>
     <%end%>
   </ul>
